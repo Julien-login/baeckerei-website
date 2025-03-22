@@ -2,11 +2,11 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Bäckerei Sonnenschein</title>
+  <title>DieBakery!</title>
   <style>
     body {
       font-family: 'Georgia', serif;
-      background: url('https://images.unsplash.com/photo-1608198093002-ad4e005484b3?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1607330289190-c0e6866fc94e?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #3e2f1c;
       text-align: center;
@@ -14,12 +14,12 @@
       background-color: #f8f1e7;
     }
     .karte {
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.9);
       border-radius: 1rem;
       padding: 2rem;
-      max-width: 600px;
+      max-width: 700px;
       margin: 2rem auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
     h1 {
       margin-bottom: 0.5rem;
@@ -28,13 +28,30 @@
       margin-top: 2rem;
       font-style: italic;
     }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    .rezeptzettel {
+      position: absolute;
+      width: 120px;
+      padding: 1rem;
+      background-color: #fff8dc;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      transform: rotate(-5deg);
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+    .zettel1 { top: 50px; left: 30px; }
+    .zettel2 { top: 300px; right: 40px; transform: rotate(3deg); }
+    .zettel3 { bottom: 50px; left: 50%; transform: translateX(-50%) rotate(-2deg); }
   </style>
 </head>
 <body>
   <div class="karte">
-    <h1>Bäckerei Sonnenschein</h1>
-    <p>Unsere Wochenkarte</p>
-    <ul style="list-style:none; padding:0;">
+    <h1>DieBakery!</h1>
+    <p><strong>Unsere Wochenkarte</strong></p>
+    <ul>
       <li><strong>Montag:</strong> Tomaten-Mozzarella-Panini</li>
       <li><strong>Dienstag:</strong> Trüffelrührei auf Sauerteigbrot</li>
       <li><strong>Mittwoch:</strong> Croissant mit Räucherlachs & Dill</li>
@@ -43,7 +60,28 @@
       <li><strong>Samstag:</strong> Brioche mit Beeren & Vanillecreme</li>
       <li><strong>Sonntag:</strong> <em>geschlossen</em> – Wir ruhen uns aus ☕</li>
     </ul>
-    <h2>Wir freuen uns auf deinen Besuch!</h2>
+    <h2>Öffnungszeiten</h2>
+    <p>Montag bis Freitag: 09:00 – 17:00 Uhr<br>
+       Samstag: 09:00 – 14:00 Uhr<br>
+       Sonntag: geschlossen</p>
+  </div>
+
+  <div class="rezeptzettel zettel1">
+    <strong>Rezept-Notiz:</strong><br>
+    250g Mehl<br>
+    150ml Wasser<br>
+    1 TL Salz
+  </div>
+  <div class="rezeptzettel zettel2">
+    <strong>Teig-Geheimnis:</strong><br>
+    1 EL Olivenöl<br>
+    3g Hefe<br>
+    30 Min gehen lassen
+  </div>
+  <div class="rezeptzettel zettel3">
+    <strong>Süße Idee:</strong><br>
+    Vanillecreme + Zimt<br>
+    Auf warmem Brioche servieren
   </div>
 </body>
 </html>
